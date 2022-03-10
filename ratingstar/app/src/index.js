@@ -9,9 +9,7 @@ function App() {
     return ( <
         div className = "App" >
         <
-        h1 > Star Components: < /h1> <
-        /div>
+        h1 > Star Components: < /h1> < /
+        div >
     );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);

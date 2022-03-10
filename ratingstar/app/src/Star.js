@@ -12,14 +12,19 @@ function Star({
         return ( <
             span className = "Star"
             style = {
-                { color } }
+                { color }
+            }
             onMouseEnter = {
-                () => console.log("Hovered In") }
+                () => console.log("Hovered In")
+            }
             onMouseLeave = {
-                () => console.log("Hovered Out") }
+                () => console.log("Hovered Out")
+            }
             onClick = {
-                () => alert("Clicked a star!") } >
-            < /span>
+                () => alert("Clicked a star!")
+            } >
+            <
+            /span>
 
         );
     }
@@ -27,14 +32,17 @@ function Star({
     return ( <
         span className = "Star"
         style = {
-            { color } }
+            { color }
+        }
         onMouseEnter = {
-            () => handleHover(value) }
+            () => handleHover(value)
+        }
         onMouseLeave = {
-            () => handleHoverLeave(value) }
+            () => handleHoverLeave(value)
+        }
         onClick = {
-            () => handleClick(value) } >
-        { isFilled ? "★" : "☆" } < /span>
+            () => handleClick(value)
+        } > { isFilled ? "★" : "☆" } < /span>
     );
 }
 
