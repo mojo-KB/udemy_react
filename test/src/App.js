@@ -1,20 +1,40 @@
 import NumPicker from "./components/NumPicker";
-
-
-
-const getMood = () => {
-  const moods = ["Angry", "Hungry", "Silly", "Quiet", "Paraniod"];
-  return moods[Math.floor(Math.random() * moods.length)]
-}
-
+import SlotMachine from "./components/SlotMachine";
+import DisplayList from "./components/DisplayList";
 
 
 
  function App() {
   return (
     <div>
-      <h1>My Current Mood is: {getMood()} </h1>
       <NumPicker />
+      <SlotMachine 
+      s1='🍓'
+      s2='🍓'
+      s3='🍓'/>
+
+      <SlotMachine 
+      s1='🍓'
+      s2='🍑'
+      s3='🍑'/>
+
+      <SlotMachine 
+      s1='🍓'
+      s2='🍇'
+      s3='🍓'/>
+
+
+      <DisplayList 
+        name="Elton"
+        hobbies={['Piano', 'Singing', 'Dancing']}
+      />
+
+      <DisplayList 
+        name="Kevin"
+        hobbies={['Gaming', 'Netflix', 'Hiking']}
+      />
+
+
     </div>
   );
 }
