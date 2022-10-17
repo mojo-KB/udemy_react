@@ -1,7 +1,9 @@
 function Card ({ chilren }) {
     return(
         <div className="card">
+            <div className="card-content">
             {chilren}
+            </div>
         </div>
     )
 }
