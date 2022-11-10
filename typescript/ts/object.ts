@@ -24,4 +24,12 @@ const singer = {
     last: "Jackson",
     age: 25
 }
-printName(singer); // age will be ignored
+printName(singer); // age will be ignored 
+
+function createUser(user: {
+    usename: string;
+    email: string;
+    isAdmin: boolean
+}) {
+    return "Hello";
+}
