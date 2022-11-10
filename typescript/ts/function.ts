@@ -59,3 +59,13 @@ const neverStop = (): never => {
         console.log("I'm still going!");
     }
 }
+
+function makeError(msg: string): never {
+    throw new Error(msg);
+}
+
+function gameLoop(): never{
+    while(true) {
+        console.log("Game is runing")
+    }
+}
