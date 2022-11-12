@@ -79,7 +79,7 @@ describePerson({
     }
 })
 
-const Song1 = {
+const songExample = {
     title: 'Unchained Melody',
     artist: "Rgitheous Brothers",
     numStreams: 12345678,
@@ -88,7 +88,43 @@ const Song1 = {
         writer: "Alex North"
     }
 }
-function calculatePayou() {
 
+
+function calculatePayout(song: {
+    title: string,
+    artist: string,
+    numStreams: number,
+    credits: {
+        producer: string,
+        writer: string
+    }
+}): string {
+    return "Something"
 }
 
+type Song = {
+    title: string,
+    artist: string,
+    numStreams: number,
+    credits: {
+        producer: string,
+        writer: string
+    }
+}
+
+
+function calculatePayoutTwo(song: Song): number {
+    return .0333 * song.numStreams;
+}
+
+function printSong(song: Song): void {
+    console.log(`${song.title} - ${song.artist}`);
+}
+
+function printData(song: Song): void {
+    console.log(song.title, song.artist, song.numStreams, song.credits.producer, song.credits.writer)
+}
+
+printSong(songExample);
+calculatePayout(songExample);
+printData(songExample);
