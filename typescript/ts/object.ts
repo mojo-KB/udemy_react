@@ -128,3 +128,31 @@ function printData(song: Song): void {
 printSong(songExample);
 calculatePayout(songExample);
 printData(songExample);
+
+
+// Optional properties in an object example
+
+type Point3D = {
+    // this type taking (x,y) and also (x,y,z)
+    x: number;
+    y: number;
+    z?: number;
+}
+
+const threeDCorrd: Point3D = {
+    x: 2, 
+    y: 5,
+    z: 3
+} 
+
+
+// Readonly type modifier
+type User = {
+    readonly id: number,
+    username: string;
+}
+
+const user: User = {
+    id: 12345,
+    username: "mojo-KB"
+}
