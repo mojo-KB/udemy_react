@@ -156,3 +156,38 @@ const user: User = {
     id: 12345,
     username: "mojo-KB"
 }
+
+// Intersection Types example
+type Circle = {
+    radius: number
+}
+
+type Colorful = {
+    color: string 
+}
+
+type ColorfulCircle = Circle & Colorful;
+
+const happyFace: ColorfulCircle = {
+    radius: 4,
+    color: "Yellow"
+}
+
+type Cat = {
+    numLives: number;
+}
+
+type Dog ={
+    breed: string
+}
+
+// adding extra type to and intersection of types
+type CatDog = Cat & Dog & {
+    age: number;
+}
+
+const mojo: CatDog = {
+    numLives: 12,
+    breed: "Husky",
+    age: 1
+}
