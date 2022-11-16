@@ -51,3 +51,37 @@ const shoes: Product = {
 console.log(shoes.applyDiscount(0.5));
 
 
+interface Dog2 {
+    name: string,
+    age: number
+}
+
+interface Dog2 {
+    breed: string,
+    bark(): string
+}
+
+const eldon: Dog2 = {
+    name: "Elton",
+    age: 0.5, 
+    breed: "Australian Shepherd",
+    bark() {
+        return 'Woof Woof'
+    }
+}
+
+interface ServiceDog extends Dog2 {
+    job: "Drug sniffer" | "Bomb" | "Guide Dog"
+}
+
+const chewy: ServiceDog = {
+    name: "Chewy",
+    age: 2,
+    breed: "Lab",
+    bark() {
+        return 'Woof'
+    },
+    job: "Guide Dog"
+}
+
+ 
