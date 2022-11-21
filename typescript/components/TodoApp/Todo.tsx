@@ -6,7 +6,7 @@ type Props = {
 
 function Todo({ todo }: Props) {
     return (
-        <div>{todo.task}</div>
+        <div className={todo.complete ? "line-through" : ""}>{todo.task}</div>
     )
 }
 
