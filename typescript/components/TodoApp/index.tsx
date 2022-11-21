@@ -1,10 +1,13 @@
 import React from 'react'
+import Header from './Header'
 
 type Props = {}
 
 function index({ }: Props) {
     return (
-        <div>index</div>
+        <div>
+            <Header />
+        </div>
     )
 }
 
