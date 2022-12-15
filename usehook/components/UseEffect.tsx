@@ -1,9 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+
 type Props = {}
 
 function UseEffect({ }: Props) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  //const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [name, setName] = useState<string>("")
 
 
@@ -27,13 +28,7 @@ function UseEffect({ }: Props) {
 
 
   useEffect(() => {
-    window.addEventListener('resize', updateW)
   })
-
-
-
-
-
 
 
   return (
