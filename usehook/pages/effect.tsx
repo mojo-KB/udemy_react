@@ -1,8 +1,11 @@
 import React from 'react'
-import UseEffect from '../components/UseEffect'
+import dynamic from 'next/dynamic'
+const UseEffect = dynamic(() => import("../components/UseEffect"), { ssr: false })
+
+
 type Props = {}
 
-function effect({}: Props) {
+function effect({ }: Props) {
   return (
     <div>
       <UseEffect />
