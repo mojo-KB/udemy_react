@@ -2,11 +2,22 @@ import React from 'react'
 
 type Props = {
     todo: any
+    handleToggle: any
 }
 
-function Todo({ todo }: Props) {
+function Todo({ todo, handleToggle }: Props) {
+
+    const handleClick = (e: any) => {
+        e.preventDefault()
+        handleToggle(e.currentTarget.id)
+    }
+
     return (
-        <div className={todo.complete ? "line-through" : ""}>{todo.task}</div>
+        <div
+            id={todo.id}
+            key={todo.id + todo.task}
+            onClick={handleClick}
+            className={todo.complete ? "line-through cursor-pointer" : "cursor-pointer"}>{todo.task}</div>
     )
 }
 

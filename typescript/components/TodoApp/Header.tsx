@@ -4,7 +4,7 @@ type Props = {}
 
 function Header({ }: Props) {
     return (
-        <header><div>To Do List</div></header>
+        <header className='text-3xl'>ToDo List</header>
     )
 }
 
