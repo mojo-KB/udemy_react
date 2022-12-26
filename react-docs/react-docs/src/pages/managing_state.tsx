@@ -1,10 +1,14 @@
 import React from 'react'
-
+import RemoveBackground from '../../components/RemoveBackground'
 type Props = {}
 
 function managing_state({ }: Props) {
   return (
-    <div>managing_state</div>
+    <div>
+      <div>mananing state</div>
+      <RemoveBackground />
+    </div>
+
   )
 }
 
