@@ -9,6 +9,12 @@ class Person {
     numLives: number = 10;
 
     // private field
+    #privateScore: number = 2;
+
+    // private function : can only be called in the class itself
+    #setPrivateScore( inputScore: number ) {
+        this.#privateScore = inputScore;
+    }
 
 
 
@@ -25,6 +31,10 @@ class Person {
     constructor (first: string, last: string) {
         this.first = first;
         this.last = last;
+    }
+    
+    getPrivateScore() {
+        return this.#privateScore;
     }
 
     // functions
