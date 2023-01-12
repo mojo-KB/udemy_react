@@ -11,6 +11,15 @@ class Person {
     // private field
     #privateScore: number = 2;
 
+
+    // getter functions
+    get fullName() {
+        return `${this.first} ${this.last}`
+    }
+
+
+    
+
     // private function : can only be called in the class itself
     #setPrivateScore( inputScore: number ) {
         this.#privateScore = inputScore;
