@@ -3,14 +3,18 @@
 
 class Person {
     // class fields
-    first: string;
-    last: string;
-    score: number = 0;
-    numLives: number = 10;
+    first: String;
+    last: String;
+    score: Number = 0;
+    numLives: Number = 10;
 
     // private field
-    #privateScore: number = 2;
+    #privateScore: Number = 2;
 
+    // setter functions
+    set numberOfLives( inputNum: Number) {
+        this.numLives = inputNum;
+    }
 
     // getter functions
     get fullName() {
@@ -18,10 +22,11 @@ class Person {
     }
 
 
+
     
 
     // private function : can only be called in the class itself
-    #setPrivateScore( inputScore: number ) {
+    #setPrivateScore( inputScore: Number) {
         this.#privateScore = inputScore;
     }
 
