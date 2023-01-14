@@ -2,6 +2,10 @@
 
 
 class Person {
+
+    // static properties : it is belonged to a class or not object of class
+    static description = 'This description is a static property.'
+
     // class fields
     first: String;
     last: String;
