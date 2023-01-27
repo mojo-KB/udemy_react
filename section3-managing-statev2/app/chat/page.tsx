@@ -11,7 +11,7 @@ function page({ }: Props) {
     const [to, setTo] = useState(contacts[0])
 
     return (
-        <div className='flex flex-row bg-black'>
+        <div className='flex flex-row bg-red-400'>
             <div>
                 <ContactList
 
