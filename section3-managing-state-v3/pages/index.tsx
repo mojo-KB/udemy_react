@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <div className=' text-lg'>Manaing State</div>
       <div className='text-italic'>key concept: </div>
       <div className='text-blue-800 list-disc flex flex-col'>
-        <Link href="">- Reacting to Input with State</Link>
+        <Link href="/reacting-to-input-with-state">- Reacting to Input with State</Link>
         <Link href="">- Choosing the state structure</Link>
         <Link href="">- Sharing state between components</Link>
         <Link href="">- Preserving and Resetting State</Link>
